@@ -10,7 +10,7 @@ describe('Extension error', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Invalid extension type', function(done) {

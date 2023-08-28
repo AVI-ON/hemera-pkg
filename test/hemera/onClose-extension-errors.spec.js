@@ -10,7 +10,7 @@ describe('onClose extension error handling', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to pass an error to onClose extension handler', function(done) {

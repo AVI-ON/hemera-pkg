@@ -10,7 +10,7 @@ describe('Middleware', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to define server method with chaining syntax', function(done) {

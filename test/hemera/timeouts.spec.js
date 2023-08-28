@@ -10,7 +10,7 @@ describe('Timeouts', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should not receive more messages when the INBOX timeouts', function(done) {

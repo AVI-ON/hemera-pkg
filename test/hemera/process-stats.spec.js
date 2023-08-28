@@ -10,7 +10,7 @@ describe('Process stats', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should return informations about the current load of the running process', function(done) {

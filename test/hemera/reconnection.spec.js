@@ -10,7 +10,7 @@ describe('NATS reconnection', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should log error when nats emit "close" event', function(done) {

@@ -8,7 +8,7 @@ describe('Promise context', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to act with context', function() {

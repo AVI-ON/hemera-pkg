@@ -10,7 +10,7 @@ describe('Plugin timeout', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should produce an error when plugin could not be load within timeout', function(done) {

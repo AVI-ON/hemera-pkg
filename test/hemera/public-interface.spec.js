@@ -10,7 +10,7 @@ describe('Public interface', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('public getters', function(done) {

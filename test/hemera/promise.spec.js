@@ -8,7 +8,7 @@ describe('Promise', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to return a promise with ready', function() {

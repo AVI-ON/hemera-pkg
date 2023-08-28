@@ -10,7 +10,7 @@ describe('Not found action', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to define a notFound action', function(done) {

@@ -17,7 +17,7 @@ describe('Hemera-web', function() {
 
   // Shutdown our server after we are done
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to pass pattern with query parameters in GET request', function(done) {

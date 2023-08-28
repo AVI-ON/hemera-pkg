@@ -10,7 +10,7 @@ describe('Hemera default config', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should check default config', function(done) {

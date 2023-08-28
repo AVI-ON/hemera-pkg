@@ -10,7 +10,7 @@ describe('Delegate', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to pass data only to the next', function(done) {

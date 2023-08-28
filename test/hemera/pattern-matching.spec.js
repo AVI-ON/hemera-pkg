@@ -10,7 +10,7 @@ describe('Pattern matching', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should throw an error when the pattern is already defined', function(done) {

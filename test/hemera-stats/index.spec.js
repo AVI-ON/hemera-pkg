@@ -19,7 +19,7 @@ describe('Hemera-stats', function() {
 
   // Shutdown our server after we are done
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
     process.env.NODE_ENV = prevNodeEnv
   })
 

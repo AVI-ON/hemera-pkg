@@ -12,7 +12,7 @@ describe('Async await Plugin interface', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to use a plugin', function(done) {

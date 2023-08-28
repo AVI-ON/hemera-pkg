@@ -12,7 +12,7 @@ describe('Error logs', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should log an error when no native error object was passed in server action', function(done) {

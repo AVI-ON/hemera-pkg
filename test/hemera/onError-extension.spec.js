@@ -10,7 +10,7 @@ describe('onError extension', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to add onError extension handler', function(done) {

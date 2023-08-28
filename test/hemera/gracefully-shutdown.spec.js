@@ -10,7 +10,7 @@ describe('Gracefully shutdown', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should gracefully shutdown nats and exit the process when calling fatal()', function(done) {

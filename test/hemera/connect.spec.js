@@ -10,7 +10,7 @@ describe('Connect', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should also be ready even when nats connection was already established', function(done) {

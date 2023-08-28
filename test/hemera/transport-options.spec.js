@@ -10,7 +10,7 @@ describe('Transport options', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should not be able to register pubsub and request mode with the same topic / 1', function(done) {

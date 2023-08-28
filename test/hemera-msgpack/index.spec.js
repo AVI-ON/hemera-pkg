@@ -14,7 +14,7 @@ describe('Hemera-msgpack', function() {
 
   // Shutdown our server after we are done
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('encode and decode', function(done) {

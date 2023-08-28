@@ -10,7 +10,7 @@ describe('Expose', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able add a exposition', function(done) {

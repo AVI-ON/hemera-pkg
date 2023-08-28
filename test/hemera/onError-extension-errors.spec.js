@@ -10,7 +10,7 @@ describe('onError extension error handling', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should abort the middleware but not overwrite the response error', function(done) {

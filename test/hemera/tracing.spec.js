@@ -10,7 +10,7 @@ describe('Tracing', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should set correct trace$ context', function(done) {

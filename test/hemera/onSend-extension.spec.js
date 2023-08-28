@@ -10,7 +10,7 @@ describe('onSend extension', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to add onSend extension handler', function(done) {

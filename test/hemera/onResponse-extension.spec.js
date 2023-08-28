@@ -10,7 +10,7 @@ describe('onResponse extension', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to add onResponse extension handler', function(done) {
