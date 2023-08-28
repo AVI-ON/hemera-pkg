@@ -10,7 +10,7 @@ describe('Custom queues', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able distribute content to different queues for the same topic', function(done) {

@@ -10,7 +10,7 @@ describe('Load policy for server component', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should throw an ProcessLoadError with (Server under heavy load) and return the error without crash the process', function(done) {

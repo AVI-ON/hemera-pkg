@@ -14,7 +14,7 @@ describe('Hemera-mail', function() {
 
   // Shutdown our server after we are done
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to send an email', function(done) {

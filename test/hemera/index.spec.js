@@ -10,7 +10,7 @@ describe('Hemera', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should throw error when hemera is bootstraped twice', function(done) {

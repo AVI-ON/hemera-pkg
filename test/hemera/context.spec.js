@@ -10,7 +10,7 @@ describe('Context', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to create a context', function(done) {

@@ -12,7 +12,7 @@ describe('Error handling', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be possible to define an errorHandler', function(done) {

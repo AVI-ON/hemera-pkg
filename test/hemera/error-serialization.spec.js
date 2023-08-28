@@ -10,7 +10,7 @@ describe('Error comparison', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to compare errors with instanceof from different instances', function() {

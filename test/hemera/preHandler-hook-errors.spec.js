@@ -10,7 +10,7 @@ describe('preHandler extension error handling', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to pass a custom super error', function(done) {

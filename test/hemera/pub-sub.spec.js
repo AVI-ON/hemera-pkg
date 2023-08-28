@@ -10,7 +10,7 @@ describe('Publish / Subscribe', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to publish one message to one subscriber (1 to 1 without reply)', function(done) {

@@ -10,7 +10,7 @@ describe('onClose extension', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to add onClose extension handler', function(done) {

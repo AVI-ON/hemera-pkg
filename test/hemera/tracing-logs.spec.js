@@ -12,7 +12,7 @@ describe('Tracing logs', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should log request and response logs', function(done) {

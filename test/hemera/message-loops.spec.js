@@ -10,7 +10,7 @@ describe('Message loop detection', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should not return an MaxRecursionError', function(done) {

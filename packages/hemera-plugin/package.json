@@ -1,6 +1,6 @@
 {
-  "name": "hemera-plugin",
-  "version": "2.0.2",
+  "name": "@avi-on/hemera-plugin",
+  "version": "2.0.3",
   "description": "This is a plugin helper for hemera",
   "main": "index.js",
   "repository": {
@@ -13,7 +13,7 @@
   "author": "Dustin Deus (https://github.com/StarpTech)",
   "license": "MIT",
   "dependencies": {
-    "semver": "5.5.x"
+    "semver": "^7.5.4"
   },
   "peerDependencies": {
     "nats-hemera": ">=5.3.0"

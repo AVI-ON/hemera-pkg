@@ -10,7 +10,7 @@ describe('Server Extensions', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to reply an error', function(done) {

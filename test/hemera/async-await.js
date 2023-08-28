@@ -12,7 +12,7 @@ describe('Async / Await support', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to await in add middleware', async function() {

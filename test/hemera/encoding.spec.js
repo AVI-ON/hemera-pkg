@@ -10,7 +10,7 @@ describe('Default JSON encoder', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to handle circular references', function(done) {

@@ -10,7 +10,7 @@ describe('Error propagation', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Error propagation depth 1', function(done) {

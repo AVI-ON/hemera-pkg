@@ -10,7 +10,7 @@ describe('Async Schema Compiler', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to modify request pattern with fulfilled promise value', function(done) {

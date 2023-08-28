@@ -10,7 +10,7 @@ describe('Error handling', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should return all hemera error objects', function(done) {

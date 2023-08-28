@@ -10,7 +10,7 @@ describe('Topic wildcards', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to use token wildcard in topic declaration', function(done) {

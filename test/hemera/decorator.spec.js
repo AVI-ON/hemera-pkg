@@ -10,7 +10,7 @@ describe('Root Decorator', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able add a decorator', function(done) {

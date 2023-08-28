@@ -10,7 +10,7 @@ describe('Streaming', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to receive many messages from the INBOX channel', function(done) {

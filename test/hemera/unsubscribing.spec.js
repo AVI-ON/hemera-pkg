@@ -10,7 +10,7 @@ describe('Unsubscribe NATS topic', function() {
   })
 
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to unsubscribe a NATS topic', function(done) {

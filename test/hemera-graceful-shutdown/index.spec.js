@@ -16,7 +16,7 @@ describe('Hemera-graceful-shutdown', function() {
 
   // Shutdown our server after we are done
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to use it as plugin', function(done) {

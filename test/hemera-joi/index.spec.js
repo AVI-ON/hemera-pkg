@@ -14,7 +14,7 @@ describe('Hemera-joi request validation', function() {
 
   // Shutdown our server after we are done
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to use joi as payload validator', function(done) {
@@ -308,7 +308,7 @@ describe('Hemera-joi response validation', function() {
 
   // Shutdown our server after we are done
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should be able to use joi as response validator', function(done) {

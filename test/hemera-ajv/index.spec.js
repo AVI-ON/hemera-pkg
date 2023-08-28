@@ -14,7 +14,7 @@ describe('Hemera-ajv request validation', function() {
 
   // Shutdown our server after we are done
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should request with no error', function(done) {
@@ -342,7 +342,7 @@ describe('Hemera-ajv response validation', function() {
 
   // Shutdown our server after we are done
   after(function() {
-    server.kill()
+    server.kill('SIGKILL')
   })
 
   it('Should respond with no error', function(done) {
