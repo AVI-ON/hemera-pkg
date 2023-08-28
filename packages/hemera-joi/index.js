@@ -1,6 +1,6 @@
 'use strict'
 
-const Hp = require('hemera-plugin')
+const Hp = require('@avi-on/hemera-plugin')
 const Joi = require('joi')
 
 function hemeraJoi(hemera, opts, done) {
